@@ -19,16 +19,19 @@ public:
         cout << "Name: " << name << endl;     
     }  
     
-    ~Student(){
-
-         
-    
+    ~Student(){         
            cout << "Student object destroyed" << endl; 
     } 
 }; 
 int main() 
 {    
-     Student s1(101, "Arun");     
-     s1.display();     
-     return 0; 
-} 
+    int roll = 0;
+    string name; 
+    cout << "Enter roll number : " << endl;
+    cin >> roll;
+    cout << "Enter name : " << endl;
+    cin >> name;
+    Student s1(roll , name);    
+    s1.display();     
+    return 0; 
+}
